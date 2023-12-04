@@ -1,0 +1,14 @@
+{% extends 'base.html'%}
+{% block title%}Cafe Home{% endblock %}
+{% block content%}
+<center>
+<div class="home">
+<h2>Welcome {{name}}, What do you like to have today</h2>
+
+<form action="/coffee" method="POST" style="margin-top:20px;">
+    <button type="submit" name="coffee_type" value="Espresso" class="coffee-btn">Espresso</button>
+    <button type="submit" name="coffee_type" value="Cappuccino" class="coffee-btn">Cappuccino</button>
+    <button type="submit" name="coffee_type" value="Latte" class="coffee-btn">Latte</button>
+</form>
+</div></center>
+{% endblock %}

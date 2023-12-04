@@ -1,0 +1,17 @@
+{% extends 'base.html'%}
+{% block title%}Cafe Payment{% endblock %}
+{% block content%}
+<center><h2 class="paymenthead">Complete your Payment</h2>
+<p style="color:red;">You are ${{short}} short for your coffee</p></center>
+<form action="/payment" method="POST">
+    <label> Enter Quarter:</label>
+    <input type="text" name="quarter" required>
+    <label> Enter Dime:</label>
+     <input type="text" name="dime" required>
+    <label> Enter Nickel:</label>
+     <input type="text" name="nickel" required>
+    <label> Enter Pennies:</label>
+     <input type="text" name="penny" required>
+    <button type="submit">Insert Coins</button>
+</form>
+{% endblock %}

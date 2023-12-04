@@ -1,0 +1,14 @@
+{% extends 'base.html'%}
+{% block title%}Cafe Coffee Enjoy your coffee{% endblock %}
+{% block content%}
+<center>
+<div class="success">
+<h2>Enjoy your {{coffeename}}, {{user}} <br> Have a good day :)</h2>
+{% if money_change %}
+<p class="change">Here is your change!<br> ${{change}}</p>
+{% endif %}
+   <button class="home" style="width:50%;border:none;"><a href="{{url_for('home')}}">Get another cup of coffee</a></button>
+     <button class="home" style="width:50%;border:none;"><a href="{{url_for('logout')}}">Logout</a></button>
+</div>
+</center>
+{% endblock %}

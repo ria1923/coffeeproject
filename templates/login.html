@@ -1,0 +1,31 @@
+{% extends 'base.html'%}
+{% block title%}Cafe Login{% endblock %}
+{% block content%}
+
+    <div class="background">
+<!--        <div class="shape"></div>-->
+<!--        <div class="shape"></div>-->
+    </div>
+
+    <form action ="/login" method="POST">
+        {% with messages = get_flashed_messages() %}
+  {% if messages %}
+
+      {% for message in messages %}
+        <p style="color:red;font-size:14px;">{{ message }}</p>
+      {% endfor %}
+
+  {% endif %}
+{% endwith %}
+        <h3>Login Here</h3>
+
+        <label for="username">Username</label>
+        <input type="text" placeholder="Username" name="username" required>
+
+        <label for="password">Password</label>
+        <input type="password" placeholder="Password" name="password" required>
+<p style="margin-top:10px;">New user?<a href="{{url_for('signup')}}">Register</a></p>
+        <button>Log In</button>
+
+    </form>
+{% endblock %}

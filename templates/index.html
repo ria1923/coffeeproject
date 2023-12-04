@@ -1,0 +1,14 @@
+{% extends 'base.html'%}
+{% block title%}Cafe Login{% endblock %}
+{% block content%}
+
+
+
+<center>
+<div class="index">
+<h2>Cup of Joy </h2>
+<button class="login"><a href="{{ url_for('login') }}">Login</a></button><br>
+<button class="register"><a href="{{ url_for('signup') }}">Register</a></button>
+    </div>
+    </center>
+{% endblock %}

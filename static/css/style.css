@@ -1,0 +1,194 @@
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.index{
+margin-top:13%;
+
+}
+
+.coffee-btn {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    background-color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+
+h2{
+color:black !important;
+font-family: bradley hand,cursive;}
+.home{
+margin-top:1% !important;
+}
+
+
+body{
+    background-color: #080710 !important;
+    background-image: url('/static/images/interior.jpg');
+}
+.background {
+    width: 430px;
+    height: 520px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.background .shape{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    border-radius: 50%;
+}
+.shape:first-child{
+    background: linear-gradient(
+        #1845ad,
+        #23a2f6
+    );
+    left: -80px;
+    top: -80px;
+}
+.shape:last-child{
+    background: linear-gradient(
+        to right,
+        #ff512f,
+        #f09819
+    );
+    right: -30px;
+    bottom: -80px;
+}
+.paymenthead{
+padding-top:20px;}
+form{
+    height: 300px;
+    width: 400px;
+    background-color: rgba(255,255,255,0.13);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 20px 35px;
+    margin-bottom:20px;
+}
+form *{
+    font-family: bradley hand, cursive;
+    color: black;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+form h3{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+}
+
+label{
+    display: block;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+input{
+    display: block;
+    height: 30px;
+    width: 100%;
+    background-color: rgba(255,255,255,0.07);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 0px;
+    font-size: 14px;
+    font-weight: 300;
+}
+::placeholder{
+    color: #e5e5e5;
+}
+button{
+    margin-top: 50px;
+    width: 100%;
+    background-color: brown;
+    color: #080710;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.social{
+  margin-top: 30px;
+  display: flex;
+}
+.social div{
+  background: red;
+  width: 150px;
+  border-radius: 3px;
+  padding: 5px 10px 10px 5px;
+  background-color: rgba(255,255,255,0.27);
+  color: #eaf0fb;
+  text-align: center;
+}
+.login{
+width:20% !important;
+margin-top:10px !important;
+border:none !important;
+border-radius:20px !important;
+}
+a{
+text-decoration:none !important;
+color:black !important;}
+.register{
+width:20% !important;
+margin-top:10px !important;
+border:none !important;
+border-radius:20px !important;
+
+}
+.social div:hover{
+  background-color: rgba(255,255,255,0.47);
+}
+.social .fb{
+  margin-left: 25px;
+}
+.social i{
+  margin-right: 4px;
+}
+.success{
+margin-top:10%;
+padding-top:30px;
+padding-bottom:30px;
+text-align:center;
+background-color:grey;
+border:none;
+border-radius:20px;
+width:40%;}
+.change{
+color:white;
+font-family: bradley hand, cursive;
+background-color:black;
+}
+.report{color:white;
+padding:20px;
+margin-top:10%;;}
+th,td{
+padding-top:20px;
+border-bottom:1px solid white;
+padding-right:500px;}
